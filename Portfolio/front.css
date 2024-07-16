@@ -1,0 +1,187 @@
+/* Light Mode */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #01579b;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #0288d1;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 32px;
+  transition: color 0.3s;
+}
+
+nav {
+  background-color: #b3e5fc;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0288d1;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+footer {
+  background-color: #0288d1;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #0288d1;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.project h3 {
+  color: #0288d1;
+  margin: 0;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.project p {
+  color: #01579b;
+  transition: color 0.3s;
+}
+
+.project a {
+  color: #0288d1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  filter: grayscale(0%);
+  position: absolute;
+  float: left;
+  top: 2%;
+  left: 1%;
+  max-width: 5%;
+  max-height: 5%;
+  transition: filter 0.3s;
+}
+
+.menu:hover {
+  filter: brightness(0) invert(1);
+}
+
+.moon {
+  position: absolute;
+  left: -3%;
+  top: -3%;
+
+}
+
+.moon:hover {
+  filter: opacity();
+}
+
+.Mode {
+  background-color: #0288d1;
+  float: right;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #01579b;
+  color: #e0f7fa;
+}
+
+header.dark-mode {
+  background-color: #0277bd;
+}
+
+h1.dark-mode {
+  color: #b3e5fc;
+}
+
+nav.dark-mode {
+  background-color: #0288d1;
+}
+
+nav ul li a.dark-mode {
+  color: #e0f7fa;
+}
+
+section.dark-mode {
+  color: #b3e5fc;
+}
+
+footer.dark-mode {
+  background-color: #0277bd;
+  color: #b3e5fc;
+}
+
+.project.dark-mode {
+  background-color: #0288d1;
+  border-color: #01579b;
+}
+
+.project h3.dark-mode {
+  color: #e0f7fa;
+}
+
+.project p.dark-mode {
+  color: #b3e5fc;
+}
+
+.project a.dark-mode {
+  color: #e0f7fa;
+}
+
+body.dark-mode .Mode {
+  background-color: #b3e5fc;
+}
+
+body.dark-mode .moon {
+  box-shadow: 15px 15px 0 0 #7b1fa2;
+}
